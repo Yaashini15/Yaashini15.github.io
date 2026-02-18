@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #4b2c5e;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+h2, .form, #summary, table {
+  background-color: #f7f1e3;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #4b2c5e;
+}
+
+.tagline {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #6b4c7a;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 16px;
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background-color: #4b2c5e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#summary {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+/* Undo box */
+#undoBox {
+  display: none;
+  text-align: center;
+  background: #fff3cd;
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#undoBox {
+  display: none;
+  text-align: center;
+  background: #cf4533;
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+
+/* Table */
+table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th, td {
+  border: 1px solid #d1c4a8;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4b2c5e;
+  color: #f7f1e3;
+}
+
+/* Status colors */
+.pending { background: #fff3cd; }
+.completed { background: #d4edda; }
+.overdue { background: #f8d7da; }
+
+/* Action buttons */
+td button:first-child {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+}
+
+td button:last-child {
+  background-color: #dc3545;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 6px 10px;
+}

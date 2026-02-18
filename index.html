@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>
+  Schedio
+  <div class="tagline">Manage your tasks with priority and status</div>
+</h2>
+
+<div class="form">
+  <input id="taskInput" placeholder="Enter task name">
+  <input id="deadline" type="date">
+  <select id="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+  </select>
+  <button onclick="addTask()">Add Task</button>
+</div>
+
+<div id="summary"></div>
+
+<div id="undoBox">
+  Task deleted.
+  <button onclick="undoDelete()">Undo</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Deadline</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="taskBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
