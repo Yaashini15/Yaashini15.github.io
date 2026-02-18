@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Learn Hub | Home</title>
+<link rel="stylesheet" href="style.css">
+<script>
+  if (!localStorage.getItem("loggedIn")) {
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<header>
+  <h1>E-Learn Hub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+</header>
+
+<section>
+  <div class="home-content">
+    <div class="home-text">
+      <h2>Welcome to E-Learn Hub</h2>
+      <p>
+        E-Learn Hub is a modern online learning platform designed to make education
+        accessible, flexible, and engaging. Learn new skills, enhance your career,
+        and explore your interests at your own pace.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 E-Learn Hub. All rights reserved.</p>
+</footer>
+
+<script>
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

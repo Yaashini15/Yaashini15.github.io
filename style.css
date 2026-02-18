@@ -1,0 +1,131 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0b1c2d, #7a4fa3);
+  color: #2c2c2c;
+
+  /* Footer at bottom */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #0b1c2d; /* Navy Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #e6d6f0; /* Light Plum */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== CONTENT ===== */
+section {
+  flex: 1;
+  background: #e6d6f0; /* Light Plum */
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+h2 {
+  color: #0b1c2d;
+}
+
+p {
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+/* ===== COURSES ===== */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.course {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.course:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #0b1c2d;
+  color: #e6d6f0;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #e6d6f0;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  color: #0b1c2d;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.login-box button {
+  width: 95%;
+  padding: 8px;
+  background: #7a4fa3; /* Plum */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-box button:hover {
+  background: #643a8c;
+}
+
+#error {
+  color: red;
+  font-size: 13px;
+}
